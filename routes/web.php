@@ -23,4 +23,6 @@ Route::post('/server', 'ServerController@store');
 Route::delete('/server', 'ServerController@destroy');
 Route::patch('/server', 'ServerController@update');
 
+Route::get('/add', 'ServerController@create');
+
 Route::get('/home', 'HomeController@index')->name('home');
